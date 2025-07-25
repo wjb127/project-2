@@ -52,7 +52,7 @@ vercel
 
 ### 배포된 이미지 URL
 ```
-https://your-project-name.vercel.app/images/gced-conference.png
+https://project-2-phi-ten.vercel.app/images/gced-conference.png
 ```
 
 ### 이메일 HTML 템플릿
@@ -61,7 +61,7 @@ https://your-project-name.vercel.app/images/gced-conference.png
 <table width="400" cellpadding="0" cellspacing="0" border="0" align="center">
   <tr>
     <td>
-      <img src="https://your-project-name.vercel.app/images/gced-conference.png" 
+      <img src="https://project-2-phi-ten.vercel.app/images/gced-conference.png" 
            width="400" 
            alt="GCED Conference" 
            style="display:block; width:100%; max-width:400px; height:auto;">
@@ -104,9 +104,8 @@ https://your-project-name.vercel.app/images/gced-conference.png
 ### 사용 방법
 
 1. 위 HTML 코드를 복사합니다
-2. `your-project-name`을 실제 Vercel 프로젝트 URL로 변경합니다
-3. `YOUR_REGISTER_URL`, `YOUR_KOREAN_URL`, `YOUR_LIVE_URL`을 실제 링크로 변경합니다
-4. 이메일 클라이언트의 HTML 모드에 붙여넣습니다
+2. `YOUR_REGISTER_URL`, `YOUR_KOREAN_URL`, `YOUR_LIVE_URL`을 실제 링크로 변경합니다
+3. 이메일 클라이언트의 HTML 모드에 붙여넣습니다
 
 ### 지원 이메일 클라이언트
 

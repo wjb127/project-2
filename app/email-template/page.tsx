@@ -21,7 +21,7 @@ export default function EmailTemplate() {
               <table width="400" cellpadding="0" cellspacing="0" border="0" align="center">
                 <tr>
                   <td>
-                    <img src="/images/gced-conference.png" 
+                    <img src="https://project-2-phi-ten.vercel.app/images/gced-conference.png" 
                          width="400" 
                          alt="GCED Conference" 
                          style="display:block; width:100%; max-width:400px; height:auto;">

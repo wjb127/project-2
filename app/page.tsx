@@ -1,9 +1,7 @@
 import Link from 'next/link'
 
 export default function Home() {
-  const deployedUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000'
+  const deployedUrl = 'https://project-2-phi-ten.vercel.app'
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
