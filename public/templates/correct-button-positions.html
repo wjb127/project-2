@@ -61,26 +61,26 @@
         
         /* Registration 섹션의 "Register On-site" 버튼 */
         .btn-register-onsite {
-            top: 42.0%;        /* Registration 섹션 내 왼쪽 파란색 버튼 */
-            left: 13%;
-            width: 35%;
-            height: 2%;
+            top: 35.5%;        /* Registration 섹션 내 왼쪽 파란색 버튼 */
+            left: 12%;
+            width: 36%;
+            height: 2.5%;
         }
         
         /* Registration 섹션의 "현장 참가 등록" 버튼 */
         .btn-register-korean {
-            top: 42.0%;        /* Registration 섹션 내 오른쪽 파란색 테두리 버튼 */
-            right: 13%;
-            width: 35%;
-            height: 2%;
+            top: 35.5%;        /* Registration 섹션 내 오른쪽 파란색 테두리 버튼 */
+            right: 12%;
+            width: 36%;
+            height: 2.5%;
         }
         
         /* "LIVE" 버튼 (빨간색) */
         .btn-live {
-            top: 48.0%;        /* LIVE 버튼 */
-            left: 32%;
-            width: 35%;
-            height: 2%;
+            top: 40.8%;        /* LIVE 버튼 */
+            left: 30%;
+            width: 40%;
+            height: 2.8%;
         }
         
 
@@ -130,24 +130,24 @@
 <body>
     <div class="container">
         <!-- 배경 이미지 -->
-        <img src="image.png" alt="GCED Conference" class="background-image">
+        <img src="https://project-2-phi-ten.vercel.app/images/gced-conference.png" alt="GCED Conference" class="background-image">
         
         <!-- 정확한 위치의 클릭 가능한 투명 버튼들 -->
         
         <!-- Registration 섹션: Register On-site -->
-        <a href="#register-onsite" 
+        <a href="https://project-2-phi-ten.vercel.app/register-onsite" 
            class="clickable-area btn-register-onsite" 
            title="Register On-site - 현장 등록"
            aria-label="Register On-site"></a>
         
         <!-- Registration 섹션: 현장 참가 등록 -->
-        <a href="#register-korean" 
+        <a href="https://project-2-phi-ten.vercel.app/register-korean" 
            class="clickable-area btn-register-korean" 
            title="현장 참가 등록"
            aria-label="현장 참가 등록"></a>
         
         <!-- LIVE 버튼 -->
-        <a href="#live" 
+        <a href="https://project-2-phi-ten.vercel.app/live" 
            class="clickable-area btn-live" 
            title="LIVE 온라인 참가"
            aria-label="LIVE 온라인 참가"></a>
@@ -194,13 +194,13 @@
                 // 실제 구현에서는 여기에 각각의 링크를 연결
                 switch(this.className.split(' ')[1]) {
                     case 'btn-register-onsite':
-                        alert('Register On-site 페이지로 이동합니다.');
+                        window.open('https://project-2-phi-ten.vercel.app/register-onsite', '_blank');
                         break;
                     case 'btn-register-korean':
-                        alert('현장 참가 등록 페이지로 이동합니다.');
+                        window.open('https://project-2-phi-ten.vercel.app/register-korean', '_blank');
                         break;
                     case 'btn-live':
-                        alert('LIVE 스트림으로 이동합니다.');
+                        window.open('https://project-2-phi-ten.vercel.app/live', '_blank');
                         break;
                     case 'btn-website':
                         alert('The IConGCED Website로 이동합니다.');

@@ -28,7 +28,12 @@ export default function Home() {
             </li>
             <li>
               <Link href="/templates/correct-button-positions.html" className="text-blue-600 hover:underline">
-                HTML 템플릿 보기
+                HTML 템플릿 보기 (업데이트됨)
+              </Link>
+            </li>
+            <li>
+              <Link href="/templates/email-ready-updated.html" className="text-blue-600 hover:underline">
+                이메일용 HTML 템플릿 (신규)
               </Link>
             </li>
             <li>
