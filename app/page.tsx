@@ -76,7 +76,69 @@ export default function Home() {
         </div>
 
         <div className="bg-white shadow rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">📧 간단한 이메일 템플릿 (추천)</h2>
+          <h2 className="text-xl font-semibold mb-4">🎯 슬라이싱된 이미지 템플릿 (최종 추천)</h2>
+          <div className="bg-gray-100 p-4 rounded overflow-x-auto">
+            <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff;">
+  <tr>
+    <td align="center" style="padding:0;">
+      <img src="${deployedUrl}/images/sliced/top.png" 
+           width="400" alt="GCED Conference Header" 
+           style="display:block; width:100%; max-width:400px; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="center" width="50%" style="padding:0;">
+            <a href="${deployedUrl}/register-onsite" target="_blank">
+              <img src="${deployedUrl}/images/sliced/register-onsite.png" 
+                   width="200" alt="Register On-site" 
+                   style="display:block; width:100%; max-width:200px; height:auto;">
+            </a>
+          </td>
+          <td align="center" width="50%" style="padding:0;">
+            <a href="${deployedUrl}/register-korean" target="_blank">
+              <img src="${deployedUrl}/images/sliced/register-korean.png" 
+                   width="200" alt="현장 참가 등록" 
+                   style="display:block; width:100%; max-width:200px; height:auto;">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:0;">
+      <a href="${deployedUrl}/live" target="_blank">
+        <img src="${deployedUrl}/images/sliced/live.png" 
+             width="400" alt="LIVE 참가" 
+             style="display:block; width:100%; max-width:400px; height:auto;">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:0;">
+      <img src="${deployedUrl}/images/sliced/bottom.png" 
+           width="400" alt="GCED Conference Footer" 
+           style="display:block; width:100%; max-width:400px; height:auto;">
+    </td>
+  </tr>
+</table>`}</pre>
+          </div>
+          <div className="mt-4 p-4 bg-green-50 rounded-lg">
+            <h3 className="font-semibold text-green-800 mb-2">✅ 이메일 최적화 완료!</h3>
+            <ul className="text-sm text-green-700 space-y-1">
+              <li>• 원본 이미지를 5개 조각으로 슬라이싱</li>
+              <li>• 각 버튼이 별도 이미지로 클릭 가능</li>
+              <li>• 모든 이메일 클라이언트에서 100% 작동</li>
+              <li>• CSS 포지셔닝 없이 순수 HTML 구조</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-semibold mb-4">📧 간단한 버튼 템플릿</h2>
           <div className="bg-gray-100 p-4 rounded overflow-x-auto">
             <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff; border-radius:8px; overflow:hidden; margin:20px auto;">
   <tr>
