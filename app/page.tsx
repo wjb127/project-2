@@ -20,43 +20,59 @@ export default function Home() {
 
         <div className="bg-white shadow rounded-lg p-6 mb-8">
           <h2 className="text-xl font-semibold mb-4">사용 가능한 리소스</h2>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/images/gced-conference.png" className="text-blue-600 hover:underline">
-                이미지 보기
-              </Link>
-            </li>
-            <li>
-              <Link href="/templates/correct-button-positions.html" className="text-blue-600 hover:underline">
-                HTML 템플릿 보기 (업데이트됨)
-              </Link>
-            </li>
-            <li>
-              <Link href="/templates/email-ready-updated.html" className="text-blue-600 hover:underline">
-                이메일용 HTML 템플릿 (신규)
-              </Link>
-            </li>
-            <li>
-              <Link href="/register-onsite" className="text-blue-600 hover:underline">
-                Register On-site 페이지
-              </Link>
-            </li>
-            <li>
-              <Link href="/register-korean" className="text-blue-600 hover:underline">
-                현장 참가 등록 페이지
-              </Link>
-            </li>
-            <li>
-              <Link href="/live" className="text-blue-600 hover:underline">
-                LIVE 참가 페이지
-              </Link>
-            </li>
-            <li>
-              <Link href="/email-template" className="text-blue-600 hover:underline">
-                이메일 템플릿 미리보기
-              </Link>
-            </li>
-          </ul>
+          
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold mb-3 text-gray-800">🖼️ 이미지 및 템플릿</h3>
+            <ul className="space-y-2 ml-4">
+              <li>
+                <Link href="/images/gced-conference.png" className="text-blue-600 hover:underline">
+                  📷 GCED Conference 이미지
+                </Link>
+              </li>
+              <li>
+                <Link href="/templates/correct-button-positions.html" className="text-blue-600 hover:underline">
+                  🎯 클릭 가능한 버튼 템플릿 (데모)
+                </Link>
+                <span className="text-xs text-gray-500 ml-2">- Ctrl+D로 디버그 모드</span>
+              </li>
+              <li>
+                <Link href="/templates/email-ready-updated.html" className="text-blue-600 hover:underline">
+                  📧 이메일용 HTML 템플릿
+                </Link>
+              </li>
+              <li>
+                <Link href="/templates/gmail-clickable-image.html" className="text-blue-600 hover:underline">
+                  ✉️ Gmail 클릭 가능한 이미지 템플릿
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-gray-800">🔗 참가 신청 페이지</h3>
+            <ul className="space-y-2 ml-4">
+              <li>
+                <Link href="/register-onsite" className="text-blue-600 hover:underline">
+                  🏢 Register On-site 페이지
+                </Link>
+              </li>
+              <li>
+                <Link href="/register-korean" className="text-blue-600 hover:underline">
+                  🇰🇷 현장 참가 등록 페이지
+                </Link>
+              </li>
+              <li>
+                <Link href="/live" className="text-blue-600 hover:underline">
+                  🔴 LIVE 참가 페이지
+                </Link>
+              </li>
+              <li>
+                <Link href="/email-template" className="text-blue-600 hover:underline">
+                  👀 이메일 템플릿 미리보기
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="bg-white shadow rounded-lg p-6">
