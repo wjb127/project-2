@@ -75,8 +75,69 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="bg-white shadow rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-semibold mb-4">📧 간단한 이메일 템플릿 (추천)</h2>
+          <div className="bg-gray-100 p-4 rounded overflow-x-auto">
+            <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff; border-radius:8px; overflow:hidden; margin:20px auto;">
+  <tr>
+    <td align="center" style="padding:0;">
+      <img src="${deployedUrl}/images/gced-conference.png" 
+           width="400" 
+           alt="GCED Conference" 
+           style="display:block; width:100%; max-width:400px; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:30px 20px; background-color:#f8f9fa; text-align:center;">
+      <h2 style="margin:0 0 20px 0; font-size:20px; color:#333; font-weight:bold;">
+        GCED Conference 참가 신청
+      </h2>
+      
+      <table width="100%" cellpadding="8" cellspacing="0" border="0" style="margin-bottom:20px;">
+        <tr>
+          <td align="center" width="50%">
+            <a href="${deployedUrl}/register-onsite" 
+               style="display:inline-block; background-color:#0066cc; color:#ffffff; text-decoration:none; padding:15px 25px; border-radius:8px; font-weight:bold; font-size:16px; min-width:120px; text-align:center;"
+               target="_blank">Register On-site</a>
+          </td>
+          <td align="center" width="50%">
+            <a href="${deployedUrl}/register-korean" 
+               style="display:inline-block; background-color:#ffffff; color:#0066cc; text-decoration:none; padding:15px 25px; border:2px solid #0066cc; border-radius:8px; font-weight:bold; font-size:16px; min-width:120px; text-align:center;"
+               target="_blank">현장 참가 등록</a>
+          </td>
+        </tr>
+      </table>
+      
+      <div style="margin:20px 0;">
+        <a href="${deployedUrl}/live" 
+           style="display:inline-block; background-color:#ff0000; color:#ffffff; text-decoration:none; padding:18px 50px; border-radius:25px; font-weight:bold; font-size:18px;"
+           target="_blank">🔴 LIVE 참가</a>
+      </div>
+      
+      <div style="margin-top:30px; padding-top:20px; border-top:1px solid #ddd;">
+        <p style="margin:0; font-size:14px; color:#666; line-height:1.5;">
+          <strong>GCED Conference 2024</strong><br>
+          📅 2024년 3월 15일 (금) 09:00-18:00<br>
+          📍 서울 컨벤션센터
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>`}</pre>
+          </div>
+          <div className="mt-4 p-4 bg-green-50 rounded-lg">
+            <h3 className="font-semibold text-green-800 mb-2">✅ 이메일 호환성 최우선</h3>
+            <ul className="text-sm text-green-700 space-y-1">
+              <li>• 절대 위치 사용 안 함 (이메일 클라이언트 호환성)</li>
+              <li>• 테이블 기반 레이아웃으로 안정성 확보</li>
+              <li>• 모든 스타일 인라인 적용</li>
+              <li>• Gmail, Naver Mail, Outlook 모두 지원</li>
+            </ul>
+          </div>
+        </div>
+
         <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4">Gmail용 클릭 가능한 이미지 HTML</h2>
+          <h2 className="text-xl font-semibold mb-4">🧪 실험용: 클릭 가능한 이미지 HTML</h2>
           <div className="bg-gray-100 p-4 rounded overflow-x-auto">
             <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
   <tr>
