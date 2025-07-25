@@ -35,13 +35,13 @@ export default function EmailTemplate() {
                     <table width="100%" cellpadding="5" cellspacing="0" border="0">
                       <tr>
                         <td align="center">
-                          <a href="#" 
+                          <a href="https://project-2-phi-ten.vercel.app/register-onsite" 
                              style="display:inline-block; background-color:#0066cc; color:#ffffff; text-decoration:none; padding:12px 25px; border-radius:5px; font-weight:bold;">
                              Register On-site
                           </a>
                         </td>
                         <td align="center">
-                          <a href="#" 
+                          <a href="https://project-2-phi-ten.vercel.app/register-korean" 
                              style="display:inline-block; background-color:#ffffff; color:#0066cc; text-decoration:none; padding:10px 25px; border:2px solid #0066cc; border-radius:5px; font-weight:bold;">
                              현장 참가 등록
                           </a>
@@ -49,7 +49,7 @@ export default function EmailTemplate() {
                       </tr>
                       <tr>
                         <td align="center" colspan="2" style="padding-top:15px;">
-                          <a href="#" 
+                          <a href="https://project-2-phi-ten.vercel.app/live" 
                              style="display:inline-block; background-color:#ff0000; color:#ffffff; text-decoration:none; padding:15px 40px; border-radius:25px; font-weight:bold; font-size:18px;">
                              LIVE 참가
                           </a>
