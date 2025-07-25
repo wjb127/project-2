@@ -26,7 +26,44 @@ export default function Home() {
             <ul className="space-y-2 ml-4">
               <li>
                 <Link href="/images/gced-conference.png" className="text-blue-600 hover:underline">
-                  📷 GCED Conference 이미지
+                  📷 GCED Conference 원본 이미지
+                </Link>
+              </li>
+              <li className="ml-4">
+                <details className="text-sm">
+                  <summary className="cursor-pointer text-gray-600 hover:text-blue-600">🔪 슬라이싱된 이미지들 보기</summary>
+                  <ul className="mt-2 space-y-1 ml-4">
+                    <li>
+                      <Link href="/images/sliced/top.png" className="text-blue-500 hover:underline text-xs">
+                        📄 상단 부분 (top.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/register-onsite.png" className="text-blue-500 hover:underline text-xs">
+                        🔵 Register On-site 버튼 (register-onsite.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/register-korean.png" className="text-blue-500 hover:underline text-xs">
+                        🔵 현장 참가 등록 버튼 (register-korean.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/live.png" className="text-blue-500 hover:underline text-xs">
+                        🔴 LIVE 버튼 (live.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/bottom.png" className="text-blue-500 hover:underline text-xs">
+                        📄 하단 부분 (bottom.png)
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <Link href="/sliced-images" className="text-blue-600 hover:underline">
+                  🔪 슬라이싱된 이미지 미리보기 페이지
                 </Link>
               </li>
               <li>
