@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCED Conference - Correct Button Positions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
+        .container {
+            position: relative;
+            width: 400px;
+            height: auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .background-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .clickable-area {
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 6px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .clickable-area:hover {
+            background-color: rgba(0, 102, 204, 0.15);
+            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.4);
+            transform: scale(1.02);
+        }
+        
+        .clickable-area:active {
+            transform: scale(0.98);
+            background-color: rgba(0, 102, 204, 0.25);
+        }
+        
+        /* 정확한 버튼 위치 - 실제 이미지 텍스트 기준 */
+        
+        /* Registration 섹션의 "Register On-site" 버튼 */
+        .btn-register-onsite {
+            top: 42.0%;        /* Registration 섹션 내 왼쪽 파란색 버튼 */
+            left: 13%;
+            width: 35%;
+            height: 2%;
+        }
+        
+        /* Registration 섹션의 "현장 참가 등록" 버튼 */
+        .btn-register-korean {
+            top: 42.0%;        /* Registration 섹션 내 오른쪽 파란색 테두리 버튼 */
+            right: 13%;
+            width: 35%;
+            height: 2%;
+        }
+        
+        /* "LIVE" 버튼 (빨간색) */
+        .btn-live {
+            top: 48.0%;        /* LIVE 버튼 */
+            left: 32%;
+            width: 35%;
+            height: 2%;
+        }
+        
+
+        
+        /* 디버깅 모드 스타일 */
+        .debug .clickable-area {
+            background-color: rgba(255, 0, 0, 0.3) !important;
+            border: 2px solid red !important;
+        }
+        
+        .debug .btn-register-onsite {
+            background-color: rgba(0, 102, 204, 0.6) !important;
+            border: 2px solid #0066cc !important;
+        }
+        
+        .debug .btn-register-korean {
+            background-color: rgba(255, 255, 255, 0.6) !important;
+            border: 2px solid #0066cc !important;
+        }
+        
+        .debug .btn-live {
+            background-color: rgba(255, 0, 0, 0.6) !important;
+            border: 2px solid #ff0000 !important;
+        }
+        
+        .debug .btn-website,
+        .debug .btn-homepage {
+            background-color: rgba(0, 102, 204, 0.6) !important;
+            border: 2px solid #0066cc !important;
+        }
+        
+        /* 접근성 */
+        .clickable-area:focus {
+            outline: 3px solid #0066cc;
+            outline-offset: 2px;
+        }
+        
+        /* 반응형 */
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 배경 이미지 -->
+        <img src="image.png" alt="GCED Conference" class="background-image">
+        
+        <!-- 정확한 위치의 클릭 가능한 투명 버튼들 -->
+        
+        <!-- Registration 섹션: Register On-site -->
+        <a href="#register-onsite" 
+           class="clickable-area btn-register-onsite" 
+           title="Register On-site - 현장 등록"
+           aria-label="Register On-site"></a>
+        
+        <!-- Registration 섹션: 현장 참가 등록 -->
+        <a href="#register-korean" 
+           class="clickable-area btn-register-korean" 
+           title="현장 참가 등록"
+           aria-label="현장 참가 등록"></a>
+        
+        <!-- LIVE 버튼 -->
+        <a href="#live" 
+           class="clickable-area btn-live" 
+           title="LIVE 온라인 참가"
+           aria-label="LIVE 온라인 참가"></a>
+        
+
+    </div>
+
+    <div style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; font-size: 12px;">
+        <div>Ctrl+D: 디버그 모드 토글</div>
+        <div>5개 버튼 위치 확인</div>
+    </div>
+
+    <script>
+        let debugMode = false;
+        
+        // 디버깅 모드 토글
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'd' && e.ctrlKey) {
+                debugMode = !debugMode;
+                document.body.classList.toggle('debug', debugMode);
+                console.log('디버그 모드:', debugMode ? 'ON' : 'OFF');
+                
+                if (debugMode) {
+                    console.log('버튼 위치:');
+                    console.log('1. Register On-site - Registration 섹션 왼쪽');
+                    console.log('2. 현장 참가 등록 - Registration 섹션 오른쪽');
+                    console.log('3. LIVE - 빨간색 LIVE 버튼');
+                    console.log('4. The IConGCED Website - 하단 왼쪽');
+                    console.log('5. 국제회의 홈페이지 - 하단 오른쪽');
+                }
+                
+                e.preventDefault();
+            }
+        });
+        
+        // 버튼 클릭 이벤트 처리
+        document.querySelectorAll('.clickable-area').forEach(function(element) {
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const buttonName = this.title;
+                console.log('클릭된 버튼:', buttonName);
+                
+                // 실제 구현에서는 여기에 각각의 링크를 연결
+                switch(this.className.split(' ')[1]) {
+                    case 'btn-register-onsite':
+                        alert('Register On-site 페이지로 이동합니다.');
+                        break;
+                    case 'btn-register-korean':
+                        alert('현장 참가 등록 페이지로 이동합니다.');
+                        break;
+                    case 'btn-live':
+                        alert('LIVE 스트림으로 이동합니다.');
+                        break;
+                    case 'btn-website':
+                        alert('The IConGCED Website로 이동합니다.');
+                        break;
+                    case 'btn-homepage':
+                        alert('국제회의 홈페이지로 이동합니다.');
+                        break;
+                }
+            });
+        });
+        
+        // 페이지 로드 시 버튼 위치 로그
+        window.addEventListener('load', function() {
+            console.log('=== GCED Conference 버튼 위치 ===');
+            console.log('정확한 5개 버튼이 매핑되었습니다:');
+            console.log('1. Register On-site (Registration 섹션)');
+            console.log('2. 현장 참가 등록 (Registration 섹션)');
+            console.log('3. LIVE (빨간색 버튼)');
+            console.log('4. The IConGCED Website (하단)');
+            console.log('5. 국제회의 홈페이지 (하단)');
+            console.log('Ctrl+D로 디버그 모드를 켜서 위치를 확인하세요.');
+        });
+    </script>
+</body>
+</html>
