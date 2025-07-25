@@ -60,49 +60,66 @@ export default function Home() {
         </div>
 
         <div className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4">이메일용 HTML 코드</h2>
+          <h2 className="text-xl font-semibold mb-4">Gmail용 클릭 가능한 이미지 HTML</h2>
           <div className="bg-gray-100 p-4 rounded overflow-x-auto">
-            <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center">
+            <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
   <tr>
-    <td>
+    <td style="position:relative; padding:0;">
       <img src="${deployedUrl}/images/gced-conference.png" 
            width="400" 
            alt="GCED Conference" 
-           style="display:block; width:100%; max-width:400px; height:auto;">
+           style="display:block; width:100%; max-width:400px; height:auto; position:relative;">
+      
+      <div style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+        <a href="${deployedUrl}/register-onsite" 
+           style="position:absolute; top:42.0%; left:13%; width:35%; height:2%; display:block; text-decoration:none; background-color:transparent; border-radius:6px; pointer-events:auto; z-index:10;"
+           title="Register On-site" target="_blank"></a>
+        
+        <a href="${deployedUrl}/register-korean" 
+           style="position:absolute; top:42.0%; right:13%; width:35%; height:2%; display:block; text-decoration:none; background-color:transparent; border-radius:6px; pointer-events:auto; z-index:10;"
+           title="현장 참가 등록" target="_blank"></a>
+        
+        <a href="${deployedUrl}/live" 
+           style="position:absolute; top:48.0%; left:32%; width:35%; height:2%; display:block; text-decoration:none; background-color:transparent; border-radius:6px; pointer-events:auto; z-index:10;"
+           title="LIVE 참가" target="_blank"></a>
+      </div>
     </td>
   </tr>
   <tr>
     <td style="padding:20px; background-color:#f8f8f8; text-align:center;">
-      <p style="margin:0 0 15px 0; font-size:16px; color:#333; font-weight:bold;">
-        참가 신청하기
-      </p>
+      <p style="margin:0 0 15px 0; font-size:16px; color:#333; font-weight:bold;">참가 신청하기</p>
       <table width="100%" cellpadding="5" cellspacing="0" border="0">
         <tr>
           <td align="center">
             <a href="${deployedUrl}/register-onsite" 
-               style="display:inline-block; background-color:#0066cc; color:#ffffff; text-decoration:none; padding:12px 25px; border-radius:5px; font-weight:bold;">
-               Register On-site
-            </a>
+               style="display:inline-block; background-color:#0066cc; color:#ffffff; text-decoration:none; padding:12px 25px; border-radius:5px; font-weight:bold;" target="_blank">
+               Register On-site</a>
           </td>
           <td align="center">
             <a href="${deployedUrl}/register-korean" 
-               style="display:inline-block; background-color:#ffffff; color:#0066cc; text-decoration:none; padding:10px 25px; border:2px solid #0066cc; border-radius:5px; font-weight:bold;">
-               현장 참가 등록
-            </a>
+               style="display:inline-block; background-color:#ffffff; color:#0066cc; text-decoration:none; padding:10px 25px; border:2px solid #0066cc; border-radius:5px; font-weight:bold;" target="_blank">
+               현장 참가 등록</a>
           </td>
         </tr>
         <tr>
           <td align="center" colspan="2" style="padding-top:15px;">
             <a href="${deployedUrl}/live" 
-               style="display:inline-block; background-color:#ff0000; color:#ffffff; text-decoration:none; padding:15px 40px; border-radius:25px; font-weight:bold; font-size:18px;">
-               LIVE 참가
-            </a>
+               style="display:inline-block; background-color:#ff0000; color:#ffffff; text-decoration:none; padding:15px 40px; border-radius:25px; font-weight:bold; font-size:18px;" target="_blank">
+               LIVE 참가</a>
           </td>
         </tr>
       </table>
     </td>
   </tr>
 </table>`}</pre>
+          </div>
+          <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-semibold text-blue-800 mb-2">사용 방법</h3>
+            <ul className="text-sm text-blue-700 space-y-1">
+              <li>• 이미지 위의 투명 버튼을 클릭하면 해당 페이지로 이동합니다</li>
+              <li>• 투명 버튼이 작동하지 않으면 아래 텍스트 버튼을 사용하세요</li>
+              <li>• Gmail 확장 프로그램에 위 코드를 복사해서 붙여넣으세요</li>
+            </ul>
           </div>
         </div>
       </div>
