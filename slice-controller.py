@@ -18,32 +18,56 @@ def slice_image_with_coordinates():
     slice_percentages = {
         'top': {
             'start': 0.0,      # 상단 0%부터
-            'end': 0.28,       # 28%까지 (줄임)
+            'end': 0.42,       # 28%까지 (줄임)
             'description': '헤더, 제목, Overview 섹션'
         },
         'register-onsite': {
-            'start': 0.28,     # 28%부터 (위로 올림)
-            'end': 0.46,       # 46%까지 (아래로 늘림)
+            'start': 0.42,     # 28%부터 (위로 올림)
+            'end': 0.44,       # 46%까지 (아래로 늘림)
             'description': 'Register On-site 버튼 (왼쪽)',
             'width_start': 0.0,
             'width_end': 0.5
         },
         'register-korean': {
-            'start': 0.28,     # 28%부터 (위로 올림)
-            'end': 0.46,       # 46%까지 (아래로 늘림)
+            'start': 0.42,     # 28%부터 (위로 올림)
+            'end': 0.44,       # 46%까지 (아래로 늘림)
             'description': '현장 참가 등록 버튼 (오른쪽)',
             'width_start': 0.5,
             'width_end': 1.0
         },
+        'pre-live': {
+            'start': 0.44,     # register 버튼 아래부터
+            'end': 0.48,       # LIVE 버튼 바로 위까지
+            'description': 'LIVE 버튼 위 섹션'
+        },
         'live': {
-            'start': 0.46,     # 46%부터 (아래로 내림)
-            'end': 0.52,       # 52%까지 (더 넓게)
+            'start': 0.48,     # 48%부터 (조금 아래로)
+            'end': 0.50,       # 50%까지 (버튼만 딱)
             'description': 'LIVE 버튼 (빨간색)'
         },
+        'middle': {
+            'start': 0.50,     # 52%부터
+            'end': 0.92,       # 86%까지 (프로그램 부분)
+            'description': 'Programme 및 스케줄 정보'
+        },
+        'website-button': {
+            'start': 0.92,     # 86%부터 (더 아래로)
+            'end': 0.935,      # 91.5%까지 (버튼이 잘리지 않도록)
+            'description': 'The IConGCED Website 버튼 (왼쪽)',
+            'width_start': 0.0,
+            'width_end': 0.5
+        },
+        'korean-website-button': {
+            'start': 0.92,     # 86%부터 (더 아래로)
+            'end': 0.935,      # 91.5%까지 (버튼이 잘리지 않도록)
+            'description': '국제회의 홈페이지 버튼 (오른쪽)',
+            'width_start': 0.5,
+            'width_end': 1.0
+        },
         'bottom': {
-            'start': 0.52,     # 52%부터 (아래로 내림)
+            'start': 0.935,    # 91.5%부터
             'end': 1.0,        # 끝까지
-            'description': 'Programme, 주최기관 정보'
+            'description': '주최기관 로고 및 연락처'
         }
     }
     

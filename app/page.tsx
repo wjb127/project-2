@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export default function Home() {
-  const deployedUrl = 'https://project-2-phi-ten.vercel.app'
+  const deployedUrl = 'https://gced-email-project.vercel.app'
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -49,13 +49,33 @@ export default function Home() {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/images/sliced/pre-live.png" className="text-blue-500 hover:underline text-xs">
+                        📄 LIVE 버튼 위 섹션 (pre-live.png)
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/images/sliced/live.png" className="text-blue-500 hover:underline text-xs">
                         🔴 LIVE 버튼 (live.png)
                       </Link>
                     </li>
                     <li>
+                      <Link href="/images/sliced/middle.png" className="text-blue-500 hover:underline text-xs">
+                        📄 프로그램 정보 (middle.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/website-button.png" className="text-blue-500 hover:underline text-xs">
+                        🌐 IConGCED Website 버튼 (website-button.png)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/images/sliced/korean-website-button.png" className="text-blue-500 hover:underline text-xs">
+                        🇰🇷 국제회의 홈페이지 버튼 (korean-website-button.png)
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/images/sliced/bottom.png" className="text-blue-500 hover:underline text-xs">
-                        📄 하단 부분 (bottom.png)
+                        📄 하단 로고/연락처 (bottom.png)
                       </Link>
                     </li>
                   </ul>
@@ -104,6 +124,16 @@ export default function Home() {
                 </Link>
               </li>
               <li>
+                <Link href="/website" className="text-blue-600 hover:underline">
+                  🌐 IConGCED Website 페이지
+                </Link>
+              </li>
+              <li>
+                <Link href="/korean-website" className="text-blue-600 hover:underline">
+                  🇰🇷 국제회의 홈페이지
+                </Link>
+              </li>
+              <li>
                 <Link href="/email-template" className="text-blue-600 hover:underline">
                   👀 이메일 템플릿 미리보기
                 </Link>
@@ -113,7 +143,7 @@ export default function Home() {
         </div>
 
         <div className="bg-white shadow rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">🎯 슬라이싱된 이미지 템플릿 (최종 추천)</h2>
+          <h2 className="text-xl font-semibold mb-4">🎯 완전 슬라이싱 템플릿 (최종)</h2>
           <div className="bg-gray-100 p-4 rounded overflow-x-auto">
             <pre className="text-xs">{`<table width="400" cellpadding="0" cellspacing="0" border="0" align="center" style="background-color:#ffffff;">
   <tr>
@@ -147,6 +177,13 @@ export default function Home() {
   </tr>
   <tr>
     <td align="center" style="padding:0;">
+      <img src="${deployedUrl}/images/sliced/pre-live.png" 
+           width="400" alt="LIVE 섹션" 
+           style="display:block; width:100%; max-width:400px; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:0;">
       <a href="${deployedUrl}/live" target="_blank">
         <img src="${deployedUrl}/images/sliced/live.png" 
              width="400" alt="LIVE 참가" 
@@ -156,8 +193,37 @@ export default function Home() {
   </tr>
   <tr>
     <td align="center" style="padding:0;">
+      <img src="${deployedUrl}/images/sliced/middle.png" 
+           width="400" alt="프로그램 정보" 
+           style="display:block; width:100%; max-width:400px; height:auto;">
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="center" width="50%" style="padding:0;">
+            <a href="${deployedUrl}/website" target="_blank">
+              <img src="${deployedUrl}/images/sliced/website-button.png" 
+                   width="200" alt="IConGCED Website" 
+                   style="display:block; width:100%; max-width:200px; height:auto;">
+            </a>
+          </td>
+          <td align="center" width="50%" style="padding:0;">
+            <a href="${deployedUrl}/korean-website" target="_blank">
+              <img src="${deployedUrl}/images/sliced/korean-website-button.png" 
+                   width="200" alt="국제회의 홈페이지" 
+                   style="display:block; width:100%; max-width:200px; height:auto;">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:0;">
       <img src="${deployedUrl}/images/sliced/bottom.png" 
-           width="400" alt="GCED Conference Footer" 
+           width="400" alt="주최기관 정보" 
            style="display:block; width:100%; max-width:400px; height:auto;">
     </td>
   </tr>
@@ -166,8 +232,8 @@ export default function Home() {
           <div className="mt-4 p-4 bg-green-50 rounded-lg">
             <h3 className="font-semibold text-green-800 mb-2">✅ 이메일 최적화 완료!</h3>
             <ul className="text-sm text-green-700 space-y-1">
-              <li>• 원본 이미지를 5개 조각으로 슬라이싱</li>
-              <li>• 각 버튼이 별도 이미지로 클릭 가능</li>
+              <li>• 원본 이미지를 9개 조각으로 정밀 슬라이싱</li>
+              <li>• LIVE 버튼만 정확히 분리하여 클릭 가능</li>
               <li>• 모든 이메일 클라이언트에서 100% 작동</li>
               <li>• CSS 포지셔닝 없이 순수 HTML 구조</li>
             </ul>

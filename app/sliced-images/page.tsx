@@ -26,17 +26,47 @@ export default function SlicedImages() {
       link: `${deployedUrl}/register-korean`
     },
     {
+      name: 'pre-live.png',
+      title: '📄 LIVE 버튼 위 섹션',
+      description: 'LIVE 버튼과 등록 버튼 사이 공간',
+      url: `${deployedUrl}/images/sliced/pre-live.png`,
+      clickable: false
+    },
+    {
       name: 'live.png',
       title: '🔴 LIVE 버튼',
-      description: 'LIVE 참가 버튼 (클릭 가능)',
+      description: 'LIVE 참가 버튼만 정확히 분리 (클릭 가능)',
       url: `${deployedUrl}/images/sliced/live.png`,
       clickable: true,
       link: `${deployedUrl}/live`
     },
     {
+      name: 'middle.png',
+      title: '📄 프로그램 정보',
+      description: 'Programme 및 스케줄 정보',
+      url: `${deployedUrl}/images/sliced/middle.png`,
+      clickable: false
+    },
+    {
+      name: 'website-button.png', 
+      title: '🌐 IConGCED Website 버튼',
+      description: '왼쪽 웹사이트 버튼 (클릭 가능)',
+      url: `${deployedUrl}/images/sliced/website-button.png`,
+      clickable: true,
+      link: `${deployedUrl}/website`
+    },
+    {
+      name: 'korean-website-button.png',
+      title: '🇰🇷 국제회의 홈페이지 버튼', 
+      description: '오른쪽 웹사이트 버튼 (클릭 가능)',
+      url: `${deployedUrl}/images/sliced/korean-website-button.png`,
+      clickable: true,
+      link: `${deployedUrl}/korean-website`
+    },
+    {
       name: 'bottom.png',
-      title: '📄 하단 부분', 
-      description: 'Programme, 주최기관 정보',
+      title: '📄 하단 로고/연락처', 
+      description: '주최기관 로고 및 연락처 정보',
       url: `${deployedUrl}/images/sliced/bottom.png`,
       clickable: false
     }
@@ -50,7 +80,7 @@ export default function SlicedImages() {
             🔪 슬라이싱된 이미지 미리보기
           </h1>
           <p className="text-gray-600">
-            GCED Conference 이미지를 5개 조각으로 나눈 결과입니다
+            GCED Conference 이미지를 9개 조각으로 정밀 슬라이싱한 결과입니다
           </p>
         </div>
 
